@@ -12,7 +12,7 @@ var ingame = false;
 function setup(){
   createCanvas(w,h);
   slider = createSlider(0.1,1,0.1,0.1);
-  slider.position(0,h+scl);
+  slider.position(0,h-scl);
   frameRate(v);
   snake = new snake(w/2,h/2);
   snake.vel.y = -scl;
@@ -48,6 +48,7 @@ function draw(){
 function play(){
   if(key === ' ' || ingame){
     ingame = true
+    slider.position(0,-scl);
     return true;
   }else{
 
