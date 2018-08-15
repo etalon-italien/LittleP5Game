@@ -7,8 +7,6 @@ var score=0;
 var v=10;
 var slider;
 var ingame = false;
-var test;
-
 
 
 function setup(){
